@@ -90,8 +90,13 @@
 </template>
 
 <script>
+import { XInput, Group } from 'vux'
 export default {
   name: 'HelloWorld',
+  components: {
+    XInput,
+    Group
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
