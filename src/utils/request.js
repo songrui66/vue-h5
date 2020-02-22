@@ -69,6 +69,38 @@ function POST (url, data) {
   })
 }
 
+function PostQueryResult (url, options = {data: { }, closeLoading: true}) {
+  store.dispatch('openLoading')
+  const {data, closeLoading} = options
+  return new Promise((resolve, reject) => {
+    axios.post(url, options, data, {
+      timeout: 60000
+    }).then(response => {
+      if (closeLoading) {
+        store.dispatch('closeLoading')
+      } if (response.data.result === 1) {
+        if (response.data.data) {
+          resolve(response.data.data)
+        } else {
+          resolve(response.data)
+        }
+      } else {
+        V.$vux.tost.show({
+          text: response.data.message,
+          type: 'warn'
+        })
+        reject(response.data)
+      }
+    }).catch(err => {
+      store.dispatch('closeLoading')
+      V.$vux.tost.show({
+        text: '网络繁忙',
+        type: 'warn'
+      })
+      reject(err)
+    })
+  })
+}
 export default {
-  GET, POST, SERVER
+  GET, POST, SERVER, PostQueryResult
 }
