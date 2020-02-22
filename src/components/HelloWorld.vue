@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
       <div class="rem">移动端适配</div>
+      <div>github提交测试</div>
     <div>
       <group title="禁用内置验证及显示成功或者错误样式">
       <x-input title="禁用验证" placeholder="I'm placeholder"></x-input>
