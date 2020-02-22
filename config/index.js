@@ -10,7 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -27,6 +27,16 @@ module.exports = {
     // If true, eslint errors and warnings will also be shown in the error overlay
     // in the browser.
     showEslintErrorsInOverlay: false,
+    proxyTable: {
+      "/api": {  // 不同电脑代理
+        target: "http://10.43.111.236:7003", //目标接口域名
+        changeOrigin: true, //是否跨域
+        pathRewrite: {
+          "^/api": "/api" //重写接口
+        }
+      }
+      // cssSourceMap: false
+    },
 
     /**
      * Source Maps

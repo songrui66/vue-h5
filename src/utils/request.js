@@ -1,5 +1,6 @@
 // axios 官网参考
 // https://www.kancloud.cn/yunye/axios/234845
+// yarn add axios
 import axios from 'axios'
 import store from './../store'
 import V from './../main.js'
