@@ -2,7 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <div class="rem">移动端适配</div>
+    <div class="rem">移动端适配
+      <div class="less">验证less</div>
+    </div>
     <div>github提交测试</div>
     <div>
       <group title="禁用内置验证及显示成功或者错误样式">
@@ -80,7 +82,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='less' scoped>
 h1,
 h2 {
   font-weight: normal;
@@ -98,5 +100,8 @@ a {
 }
 .rem {
   font-size: 32px;
+  .less{
+    color: lime;
+  }
 }
 </style>
