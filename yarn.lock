@@ -9848,6 +9848,11 @@ vue@^2.5.2:
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
 
+vuex@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.1.2.tgz#a2863f4005aa73f2587e55c3fadf3f01f69c7d4d"
+  integrity sha1-ooY/QAWqc/JYflXD+t8/AfacfU0=
+
 vux-blazy@^1.6.4:
   version "1.6.4"
   resolved "https://registry.npm.taobao.org/vux-blazy/download/vux-blazy-1.6.4.tgz#e33073d902e0a3844ef1a463cce3ca2e0aab47bf"

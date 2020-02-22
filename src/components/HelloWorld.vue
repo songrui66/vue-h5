@@ -2,52 +2,37 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-      <div class="rem">移动端适配</div>
-      <div>github提交测试</div>
+    <div class="rem">移动端适配</div>
+    <div>github提交测试</div>
     <div>
       <group title="禁用内置验证及显示成功或者错误样式">
-      <x-input title="禁用验证" placeholder="I'm placeholder"></x-input>
-     </group>
+        <x-input title="禁用验证" placeholder="I'm placeholder"></x-input>
+      </group>
     </div>
     <ul>
       <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
+        <a href="https://vuejs.org" target="_blank">
           Core Docs
         </a>
       </li>
       <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
+        <a href="https://forum.vuejs.org" target="_blank">
           Forum
         </a>
       </li>
       <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
+        <a href="https://chat.vuejs.org" target="_blank">
           Community Chat
         </a>
       </li>
       <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
+        <a href="https://twitter.com/vuejs" target="_blank">
           Twitter
         </a>
       </li>
-      <br>
+      <br />
       <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
+        <a href="http://vuejs-templates.github.io/webpack/" target="_blank">
           Docs for This Template
         </a>
       </li>
@@ -55,34 +40,22 @@
     <h2>Ecosystem</h2>
     <ul>
       <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://router.vuejs.org/" target="_blank">
           vue-router
         </a>
       </li>
       <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://vuex.vuejs.org/" target="_blank">
           vuex
         </a>
       </li>
       <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://vue-loader.vuejs.org/" target="_blank">
           vue-loader
         </a>
       </li>
       <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
+        <a href="https://github.com/vuejs/awesome-vue" target="_blank">
           awesome-vue
         </a>
       </li>
@@ -108,7 +81,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
@@ -122,7 +96,7 @@ li {
 a {
   color: #42b983;
 }
-.rem{
+.rem {
   font-size: 32px;
 }
 </style>

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import ajax from './utils/request.js'
 Vue.config.productionTip = false
 
@@ -12,7 +13,8 @@ const V = new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 })
 
 export default V
