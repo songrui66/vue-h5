@@ -39,7 +39,7 @@
         </a>
       </li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h2 @click="flow">Ecosystem</h2>
     <ul>
       <li>
         <a href="http://router.vuejs.org/" target="_blank">
@@ -67,6 +67,7 @@
 
 <script>
 import { XInput, Group } from 'vux'
+import ajax from '../utils/request'
 export default {
   name: 'HelloWorld',
   components: {
@@ -76,6 +77,16 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    flow () {
+      let options = {
+        mobile: ''
+      }
+      ajax.POST('baidu.com',
+        options).then((Response) => {
+      })
     }
   }
 }

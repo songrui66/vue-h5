@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import store from './../store'
 import HelloWorld from '@/components/HelloWorld'
+import scroll from '@/components/scroll'
 
 Vue.use(Router)
 
@@ -14,9 +15,15 @@ const router = new Router({
       meta: {
         title: '首页'
       }
-      // component: resolve => {
-      //   require(['@/views/login/login.vue'], resolve)
-      // }
+    },
+    {
+      path: '/scroll',
+      name: 'Scroll',
+      component: scroll,
+      meta: {
+        title: '滚动页'
+      }
+
     }
     // {
     //   path: '/insure',
