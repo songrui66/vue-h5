@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import store from './../store'
 import HelloWorld from '@/components/HelloWorld'
 import scroll from '@/components/scroll'
+import swiper from '@/components/swiper'
 
 Vue.use(Router)
 
@@ -23,7 +24,14 @@ const router = new Router({
       meta: {
         title: '滚动页'
       }
-
+    },
+    {
+      path: '/swiper',
+      name: 'Swiper',
+      component: swiper,
+      meta: {
+        title: '滚动页'
+      }
     }
     // {
     //   path: '/insure',

@@ -7,7 +7,6 @@ import store from './store'
 import ajax from './utils/request.js'
 import local from './utils/storage.js'
 Vue.config.productionTip = false
-
 Vue.prototype.$ajax = ajax
 Vue.prototype.$local = local
 /* eslint-disable no-new */

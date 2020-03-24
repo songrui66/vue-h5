@@ -2,9 +2,9 @@
   <div class="scroll">
     <div class="limit"></div>
     <div class="limitss">
-      <div v-bind:style="{ 'margin-right': '120px' }">
+      <!-- <div v-bind:style="{ 'margin-right': '120px' }">
         哈哈哈哈哈哈哈哈哈哈哈
-      </div>
+      </div> -->
     </div>
     <button class="btn">按钮</button>
     <div class="bottom" v-if="show"></div>
@@ -16,10 +16,27 @@ export default {
   props: {},
   data () {
     return {
-      show: false
+      show: false,
+      // 时间倒计时
+      Countdown: 10,
+      schannel: ''
     }
   },
-  created () {},
+  created () {
+    // 倒计时自动跳转
+    if (!this.timer) {
+      this.Countdown = 10
+      this.timer = setInterval(() => {
+        if (this.Countdown > 0 && this.Countdown <= 10) {
+          this.Countdown--
+        } else {
+          window.location.href = 'https://www.baidu.com/s?ie=UTF-8&wd=%E7%99%BE%E5%BA%A6/#/' + this.schannel + '/00001'
+          clearInterval(this.timer)
+          this.timer = null
+        }
+      }, 1000)
+    }
+  },
   mounted () {
     window.addEventListener('scroll', this.showIcon)
   },
@@ -57,6 +74,7 @@ export default {
   background-color: pink;
   width: 100%;
   padding-bottom: 800px;
+
   .limit {
     height: 200px;
     width: 100%;
